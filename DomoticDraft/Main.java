@@ -5,7 +5,7 @@ public class Main{
      * @param args
      */
     public static void main(String[] args) {
-    Inventory inventory = new Inventory();
+    InventoryA inventory = new InventoryA();
 
     inventory.createInventory();
     
