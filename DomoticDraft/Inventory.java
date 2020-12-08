@@ -7,10 +7,19 @@ public class Inventory<T>{
         elements = new ArrayList<T>();
     }
 
+    
+    /** 
+     * @param element
+     */
     public void addElement( T element ){
         elements.add(element);
     }
 
+    
+    /** 
+     * @param element
+     * @return int
+     */
     public int searchElement( T element ){
         int index = -1;
         for( int i = 0; i < elements.size(); i++ ){
@@ -23,6 +32,10 @@ public class Inventory<T>{
         return index;
     }
 
+    
+    /** 
+     * @param element
+     */
     public void removeElement( T element ){
         int index = searchElement(element);
         if( index >= 0 ){
@@ -30,6 +43,10 @@ public class Inventory<T>{
         }
     }
 
+    
+    /** 
+     * @return String
+     */
     public String toString(){
         String output = " ";
         for( int i = 0; i < elements.size(); i++ ){
