@@ -15,14 +15,16 @@ public class Main{
     DeviceSpecs espec2 = new DeviceSpecs(Brand.LG, "Model0", true, false);
     Device device2 = new TV(0, true, "TV", espec2, "OLED");
 
+    // Prueba de agregar dispositivo.
     inventoryDevice.addElement( device0 );
     inventoryDevice.addElement( device1 );
     inventoryDevice.addElement( device2 );
-
+    
+    // Prueba de busqueda.
     System.out.println( inventoryDevice.searchElement( device2 ) );
     
+    // Prueba para comprobar que funcione el remover.
     inventoryDevice.removeElement( device1 );
-
     System.out.println( inventoryDevice.searchElement( device2 ) );
 
     }
