@@ -21,5 +21,9 @@ public class Main{
 
     System.out.println( inventoryDevice.searchElement( device2 ) );
     
+    inventoryDevice.removeElement( device1 );
+
+    System.out.println( inventoryDevice.searchElement( device2 ) );
+
     }
 }
